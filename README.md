@@ -106,7 +106,7 @@ All cleaning done in Python (Pandas) before loading to MySQL:
 
 After segmentation, 5,848 customers distributed across 11 groups. Loyal Customers (1,093) and Champions (1,008) are the two largest segments. At Risk (632) and About to Sleep (680) together represent 1,312 customers who need re-engagement. Cannot Lose Them has 0 customers in this dataset — no one meets the strict criteria of high frequency, high monetary, and recency score of 1.
 
-![Customer Count by Segment](assets/viz1_customer_count.png)
+<img width="1093" height="550" alt="viz1_customer_count" src="https://github.com/user-attachments/assets/cb8245af-2016-4564-bddc-7b3151ab2c9b" />
 
 **Key EDA stats:**
 - Loyal Customers: **1,093** | Champions: **1,008** | Need Attention: **807**
@@ -198,7 +198,7 @@ FROM v_rfm_scored;
 
 **Segment scores — Average RFM per group (1–4 scale):**
 
-![RFM Heatmap](assets/viz3_rfm_heatmap.png)
+<img width="1093" height="550" alt="viz3_rfm_heatmap" src="https://github.com/user-attachments/assets/b1aee83a-a8cd-4195-a40f-80beb4355e75" />
 
 Champions average R=4, F=3.72, M=3.7. At Risk averages F=3.4 and M=3.38 — historically strong buyers — but R=1.78 flags them as lapsed.
 
@@ -237,7 +237,7 @@ ORDER BY monetary DESC;
 
 **Finding:** 632 At Risk customers hold **£1,983,300** in lifetime revenue — 11.7% of total. These are high-frequency, high-spend customers who haven't purchased recently.
 
-![Recency vs Lifetime Value](assets/viz4_recency_vs_monetary.png)
+<img width="1093" height="600" alt="viz4_recency_vs_monetary" src="https://github.com/user-attachments/assets/f619cf06-69e8-4291-9739-1cdb0ade3be9" />
 
 Champions (dark green) cluster bottom-left — recent and high-value. At Risk (pink/red) spread right — high historical spend, but increasingly lapsed.
 
@@ -265,7 +265,7 @@ ORDER BY quintile DESC;
 
 **Finding:** The 80% cumulative revenue line is crossed before the 20% customer mark — confirming the Pareto rule holds in this dataset.
 
-![Pareto Chart](assets/viz5_pareto.png)
+<img width="1093" height="500" alt="viz5_pareto" src="https://github.com/user-attachments/assets/3693324a-1f10-4cf2-8784-0a310b4a2f2a" />
 
 ---
 
@@ -290,7 +290,7 @@ ORDER BY avg_order_value DESC;
 
 **Revenue by Segment — Champions vs. Everyone Else:**
 
-![Revenue by Segment](assets/viz2_revenue_by_segment.png)
+<img width="1093" height="550" alt="viz2_revenue_by_segment" src="https://github.com/user-attachments/assets/89e2d41e-f340-4400-9a1b-638556a81b62" />
 
 Champions (1,008 customers) drive **£9,788,000** — more revenue than all other 10 segments combined. Loyal Customers add £3,304,700 (19.5%). At Risk contributes £1,983,300 but that revenue is actively at risk of permanent loss.
 
@@ -330,7 +330,7 @@ SOURCE 03_Business_Questions.sql;
 
 **Segment strategy — each group mapped to a concrete action:**
 
-![Campaign Strategy Table](assets/viz6_strategy_table.png)
+<img width="1093" height="460" alt="viz6_strategy_table" src="https://github.com/user-attachments/assets/7e930481-fde9-4e85-9692-987bd4096dc1" />
 
 | Segment | Customers | % Revenue | Priority Action | Channel |
 |---|---|---|---|---|
