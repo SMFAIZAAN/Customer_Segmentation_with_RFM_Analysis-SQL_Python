@@ -354,4 +354,4 @@ _Cannot Lose Them has 0 qualifying customers in this dataset — the CASE criter
 - Add a date parameter to the reference date rather than computing `MAX(invoicedate) + 1 DAY` inside a subquery — this makes the views reusable against live data
 - Store the cleaning log (rows removed per step) as a separate summary table for auditability
 - Validate segment boundary conditions between Promising and Potential Loyalists — a priority ordering in the CASE WHEN would resolve edge-case overlaps
-- Add month-over-month cohort retention analysis — RFM is a snapshot; time-series by segment would strengthen the business narrative
+- Add month-over-month cohort retention analysis — RFM is a snapshot; time-series by segment would strengthen the business narrative.
